@@ -9,33 +9,24 @@
 <body>
     <div class="container">
 
-
         <!-- NAVEGADOR -->
-         
         <nav>
-            <a href=""><img src="img/github.png" alt="" width="35px"></a>
-            <a href=""><img src="img/gmail.png" width="35px" alt=""></a>
-            <a href=""><img src="img/ig.png" width="35px" alt=""></a>
-            
+            <a href=""><img class="git" src="img/github.png" alt="GitHub" width="35px"></a>
+            <a href=""><img class="mail" src="img/gmail.png" width="35px" alt="Gmail"></a>
+            <a href=""><img class="ig" src="img/ig.png" width="35px" alt="Instagram"></a>
         </nav>
 
         <main>
-
             <!-- INFO Y FOTO -->
-
             <div class="info">
                 <div class="info-content">
-
                     <h1>Pablo Gonzalez</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quibusdam doloremque.
-                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur quibusdam doloremque.</p>
                 </div>
-                <img src="https://e7.pngegg.com/pngimages/348/800/png-clipart-man-wearing-blue-shirt-illustration-computer-icons-avatar-user-login-avatar-blue-child-thumbnail.png" alt="" width="">
+                <img src="https://e7.pngegg.com/pngimages/348/800/png-clipart-man-wearing-blue-shirt-illustration-computer-icons-avatar-user-login-avatar-blue-child-thumbnail.png" alt="Pablo Gonzalez Avatar" width="">
             </div>
 
-
             <!-- PROYECTOS -->
-
             <div class="project">
                 <h2>PROYECTOS</h2>
                 <div class="projects">
@@ -54,33 +45,46 @@
                         <h4>Lorem</h4>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <div class="card">
-                        <img src="https://economipedia.com/wp-content/uploads/proyecto.png" width="300px" alt="">
-                        <h4>Lorem</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <!-- EXPERIENCIA -->
+            <div class="experience">
+                <h2>EXPERIENCIA</h2>
+                <div class="experience-list">
+                    <div>
+                        <h4>Desarrollador Frontend</h4>
+                        <p>Empresa ABC - <i>2020-2023</i></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
-                    <div class="card">
-                        <img src="https://economipedia.com/wp-content/uploads/proyecto.png" width="300px" alt="">
-                        <h4>Lorem</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="card">
-                        <img src="https://economipedia.com/wp-content/uploads/proyecto.png" width="300px" alt="">
-                        <h4>Lorem</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <div>
+                        <h4>Ingeniero de Software</h4>
+                        <p>Empresa XYZ - <i>2017-2020</i></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </div>
             </div>
 
-
-            <!-- EXPERIENCIA -->
-
-
-            <div class="experience">
-
-
+            <!-- CONTACTO -->
+            <div class="contact-container">
+                <h2>Formulario de Contacto</h2>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Enviar</button>
+                </form>
             </div>
+            
         </main>
     </div>
-</body>
 </html>

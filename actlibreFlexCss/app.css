@@ -8,7 +8,7 @@
 body {
     width: 100%;
     background: rgb(42, 58, 101);
-    background: radial-gradient(circle at top, rgba(42, 58, 101, 1) 1%, rgba(2, 2, 41, 0.989233193277311) 15%);
+    background: radial-gradient(circle at top, rgba(42, 58, 101, 1) 1%, rgba(2, 2, 41, 0.989233193277311) 65%);
     background-size: cover;
     position: relative;
 }
@@ -16,7 +16,6 @@ body {
 .container {
     margin: auto;
     width: 60vw;
-    height: 1000vh;
     display: flex;
     flex-direction: column;
 }
@@ -41,19 +40,24 @@ nav>a {
     font-size: 1.3rem;
     padding: 3px;
     border-radius: 20px;
-    transition: 2s;
-}
-nav>a>img {
-    transition: 0.5s;
 }
 
-nav>a>img:hover{
+.git:hover {
     text-decoration: none;
     filter: invert(0.4) sepia(1) hue-rotate(190deg) saturate(1000%);
-    width: 40px;
 }
 
-main{
+.mail:hover {
+    text-decoration: none;
+    filter: invert(0.4) sepia(1) hue-rotate(310deg) saturate(1000%);
+}
+
+.ig:hover {
+    text-decoration: none;
+    filter: invert(0.4) sepia(1) hue-rotate(220deg) saturate(1000%);
+}
+
+main {
     margin-top: 15vh;
     display: flex;
     flex-direction: column;
@@ -61,37 +65,41 @@ main{
     gap: 20vh;
 }
 
-h1{
+h1 {
     font-size: 3.5rem;
-    font-family: 'Arial';
+    font-family: 'Cascadia Code';
     color: rgb(243, 243, 170);
 }
 
-h2{
+h2 {
     color: rgb(243, 243, 170);
-
+    font-family: 'Cascadia Code';
+    font-size: 2.5rem;
 }
-p{
+
+p {
     font-size: 2rem;
-    font-family: 'Arial';
+    font-family: 'Cascadia Code';
 }
 
-h4{
+h4 {
     font-size: 1.7rem;
-    font-family: 'Arial';
+    font-family: 'Cascadia Code';
+    color: rgb(165, 123, 204);
 }
 
-.info{
+.info {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
-.info img{
+
+.info img {
     border-radius: 250px;
 }
 
-.info-content{
+.info-content {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -99,8 +107,8 @@ h4{
     width: 50%;
 }
 
-.project{
-    font-family: arial;
+.project {
+    font-family: Cascadia Code;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,21 +117,21 @@ h4{
 }
 
 
-.projects{
+.projects {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 1.8rem 1.8rem;
+    gap: 4rem;
 }
 
-.projects p{
+.projects p {
     font-size: 1rem;
     text-align: center;
     width: 250px;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     gap: 2vh;
@@ -134,21 +142,181 @@ h4{
     border-radius: 30px;
     padding-bottom: 1vh;
     background-color: rgb(46, 56, 83);
-    transition: 1s;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.5s;
+    box-shadow: rgba(235, 235, 235, 0.35) 0px 5px 15px;
 }
 
-.card img{
+.card img {
     border-radius: 25px 25px 0 0;
     transition: 1s;
 }
-.card:hover{
+
+.card:hover {
     background-color: rgb(255, 255, 255);
 }
 
-.card:hover > p{
-    color:  rgb(46, 56, 83);
+.card:hover>p {
+    color: rgb(46, 56, 83);
 }
-.card:hover > h4{
-    color:  rgb(46, 56, 83);
+
+.card:hover>h4 {
+    color: rgb(46, 56, 83);
+}
+
+.experience-list p {
+    font-size: 1.7rem;
+    margin: 7px 0;
+}
+
+.experience-list h4 {
+    margin-top: 45px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
+
+.contact-container {
+    align-self: center;
+    background-color: rgb(46, 56, 83);
+    ;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    box-sizing: border-box;
+    margin-bottom: 6vh;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 1rem;
+    color: rgb(165, 123, 204);
+    font-family: 'Cascadia Code';
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: rgb(47, 4, 53);
+}
+
+textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: rgb(165, 123, 204);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: rgb(121, 91, 150);
+}
+
+
+@media (max-width: 1024px) {
+
+    .container {
+        width: 80vw;
+    }
+
+    nav {
+        gap: 5vw;
+    }
+
+    .main {
+        margin-top: 10vh;
+        gap: 15vh;
+    }
+
+    .info-content {
+        width: 100%;
+    }
+
+    .projects {
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .projects p {
+        font-size: 1rem;
+        width: auto;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    .contact-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 90vw;
+    }
+
+    nav {
+        gap: 4vw;
+        padding: 10px;
+    }
+
+    nav>a {
+        font-size: 1.2rem;
+        padding: 5px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .contact-container {
+        width: 100%;
+        padding: 15px;
+    }
 }
