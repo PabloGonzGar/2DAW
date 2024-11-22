@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 70px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img draggable="false" class="dropzone" id="emptyBin" src="img/akar-icons--trash-bin.png" alt="" width="100px">
+        <button>Reload</button>
+        <img draggable="true" id="paper" src="img/mdi--paper-outline.png" alt="">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
