@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+header {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    grid-template-rows: 10vh 90vh;
+    background: #8360c3;
+    background: linear-gradient(to right, hsla(221, 61%, 46%, 0.678), hsla(261, 45%, 57%, 0.692)), url(img/jumbox.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+}
+
+h2 {
+    color: #7d92ee;
+    font-size: 3rem;
+}
+
+h3 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+nav {
+    display: flex;
+    gap: 3vw;
+    justify-content: end;
+    width: 100%;
+    align-items: center;
+    padding: 0 10vw 0 0;
+}
+
+.jumbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 25vh;
+    width: 70%;
+    gap: 2vh;
+    margin-left: 10vw;
+}
+
+.btn-contact-now {
+    border: 0;
+    color: #7d92ee;
+    width: 20%;
+    font-size: 1.3rem;
+    padding: 2vh 2vw;
+    border-radius: 35px;
+}
+
+.btn-contact-now:hover {
+    background-color: rgb(226, 225, 225);
+}
+
+.dark {
+    border: 0;
+    background-color: #7d92ee;
+    color: white;
+    width: 35%;
+    font-size: 1.3rem;
+    padding: 2vh 2vw;
+    border-radius: 45px;
+}
+
+.dark:hover {
+    background-color: #6b7cc9;
+
+}
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 500;
+    padding: 0.5% 1%;
+}
+
+a:hover {
+    border: solid 1px;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+    padding-bottom: 15vh;
+}
+
+.about img {
+    border-radius: 50%;
+}
+
+.about p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.habilities {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 2vw;
+    padding-bottom: 15vh;
+}
+
+.habilities .content {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.habilities .content p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.about-work {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2vw;
+    padding-bottom: 15vh;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.content p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.proyects{
+    background-color: rgb(235, 232, 232);
+    padding-left: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.grid-container {
+    padding-right: 15%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    margin-top: 30px;
+}
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 20px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+.opinions{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10vh;
+    gap: 10vh;
+    margin-top: 7vh;
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: rebeccapurple;
+    padding: 8%;
+    border-radius: 20px;
+    gap: 2vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.profile img{
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.profile-content{
+    display: flex;
+    flex-direction: column;
+}
+
+h5{
+    font-size: 2rem;
+    color: white;
+}
+.profile-content h6{
+    font-size: 1.5rem;
+    color: rgba(224, 187, 84, 0.822);
+}
+
+.cards{
+    display: grid;
+    grid-template-columns:49% 49%;
+    gap: 6%;
+}
+
+.card p{
+    color: white;
+}
+
+footer{
+    background-color: #7d92ee;
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    margin-top: 10;
+    
+}
+
+.container-footer{
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50%50%;
+    align-items: center;
+}
+
+.contact-rrss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+}
+
+.rrss{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3,33%);
+    gap: 4vw;
+}
+
