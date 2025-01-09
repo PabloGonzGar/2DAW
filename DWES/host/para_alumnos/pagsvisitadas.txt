@@ -1,0 +1,4 @@
+https://www.php.net/manual/en/function.ini-set.php
+https://stackify.com/display-php-errors/
+https://www.php.net/manual/en/function.filter-input.php
+https://www.w3schools.com/mysql/mysql_update.asp
