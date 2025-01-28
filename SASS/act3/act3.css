@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .menu {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  gap: 2vw;
+  justify-content: end;
+  background-color: rgb(85, 85, 230);
+  list-style: none;
+}
+body .menu .menu-item {
+  padding: 10px 20px;
+  color: white;
+  transition: 0.1s;
+}
+body .menu .menu-item:first-child {
+  border: solid;
+}
+body .menu .menu-item:first-child:hover {
+  background-color: rgb(16, 16, 124);
+}
+body .menu .menu-item:hover {
+  border-bottom: solid;
+}/*# sourceMappingURL=act3.css.map */

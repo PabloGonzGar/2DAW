@@ -1,0 +1,15 @@
+$primary-color : rgb(62, 62, 255);
+$secundary-color : rgb(15, 90, 43);
+$default-font-size : 20px;
+
+body{
+    font-size: $default-font-size;
+    header{
+        background-color: $primary-color;
+        color: white;
+    }
+
+    p{
+        color: $secundary-color;
+    }
+}

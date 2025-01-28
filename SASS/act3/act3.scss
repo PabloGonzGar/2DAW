@@ -1,0 +1,35 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    .menu {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        padding: 25px;
+        gap: 2vw;
+        justify-content: end;
+        background-color: rgb(85, 85, 230);
+        list-style: none;
+
+        .menu-item {
+            padding: 10px 20px;
+            color: white;
+            transition: 0.1s ;
+        }
+
+        .menu-item:first-child {
+            border: solid;
+        }
+
+        .menu-item:first-child:hover {
+            background-color: rgb(16, 16, 124);
+        }
+
+        .menu-item:hover {
+            border-bottom: solid;
+        }
+    }
+}

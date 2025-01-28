@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Cascadia Code";
+  height: 100vh;
+  background-color: rgb(223, 222, 222);
+}
+body .card, body .card-warning, body .card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px 30px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  background: white;
+}
+body .card h5, body .card-warning h5, body .card-info h5 {
+  font-size: 25px;
+  margin-bottom: 7vh;
+}
+body .card h5, body .card-warning h5, body .card-info h5 {
+  color: rgb(34, 34, 167);
+}
+body .card-info {
+  border: solid rgb(255, 136, 0);
+}
+body .card-info h5 {
+  color: rgb(177, 95, 2);
+}
+body .card-warning {
+  border: solid rgb(255, 0, 0);
+}
+body .card-warning h5 {
+  color: rgb(177, 2, 2);
+}/*# sourceMappingURL=act5.css.map */

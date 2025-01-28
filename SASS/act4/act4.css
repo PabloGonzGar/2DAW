@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .btn-primary {
+  border-radius: 15px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+}
+body .btn-secondary {
+  border-radius: 15px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(218, 95, 95);
+  color: white;
+  font-size: 30px;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px;
+}/*# sourceMappingURL=act4.css.map */
