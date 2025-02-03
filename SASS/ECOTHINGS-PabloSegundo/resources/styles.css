@@ -1,17 +1,19 @@
+@charset "UTF-8";
 body {
   font-family: "Arial";
   line-height: 1.6;
   background: #dbdbdb;
   margin: 0;
   padding: 0;
+  transition: 0.3s ease;
   box-sizing: border-box;
 }
-body *, body *:before, body *:after {
+body * {
   box-sizing: inherit;
 }
 body header {
-  height: 100vh;
   background: url("images/back-dia.png");
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,14 +26,16 @@ body header {
 body header nav {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 100px;
+  padding-right: 50px;
+  justify-content: space-between;
 }
 body header nav .links {
   display: flex;
   flex-direction: row;
   gap: 2.5vw;
-  padding-top: 40px;
-  padding-left: 100px;
-  padding-right: 100px;
 }
 body header nav .links a {
   text-decoration: none;
@@ -42,6 +46,60 @@ body header nav .links a {
 }
 body header nav .links a:hover {
   transform: translateY(-15px);
+}
+body header nav .modo {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5vw;
+  align-items: center;
+  padding-right: 100px;
+  justify-content: space-between;
+}
+body header nav .modo .switch-container {
+  position: relative;
+}
+body header nav .modo .switch-checkbox {
+  display: none;
+}
+body header nav .modo .switch-label {
+  display: block;
+  width: 60px;
+  height: 30px;
+  background-color: #83d8ff;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+body header nav .modo .switch-button {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #ffdb57;
+  transition: 0.3s ease;
+}
+body header nav .modo .switch-button::before {
+  content: "☀️";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+}
+body header nav .modo .switch-checkbox:checked + .switch-label {
+  background-color: #3c4145;
+}
+body header nav .modo .switch-checkbox:checked + .switch-label .switch-button {
+  left: calc(100% - 28px);
+  background-color: #7e7e7e;
+}
+body header nav .modo .switch-checkbox:checked + .switch-label .switch-button::before {
+  content: "🌙";
+}
+body header nav .modo .switch-checkbox:checked ~ body {
+  background-color: #1a1a1a;
 }
 body header .hero {
   display: flex;
@@ -84,23 +142,42 @@ body .productos .productos-grid .parent {
   grid-column-gap: 30px;
   grid-row-gap: 40px;
 }
-body .productos .productos-grid .parent .prod .div1 {
+body .productos .productos-grid .parent .div1 {
   grid-area: 1/1/3/3;
 }
-body .productos .productos-grid .parent .prod .div2 {
+body .productos .productos-grid .parent .div2 {
   grid-area: 1/3/3/5;
 }
-body .productos .productos-grid .parent .prod .div3 {
+body .productos .productos-grid .parent .div3 {
   grid-area: 1/5/3/7;
 }
-body .productos .productos-grid .parent .prod .div4 {
+body .productos .productos-grid .parent .div4 {
   grid-area: 3/1/5/3;
 }
-body .productos .productos-grid .parent .prod .div5 {
+body .productos .productos-grid .parent .div5 {
   grid-area: 3/3/5/5;
 }
-body .productos .productos-grid .parent .prod .div6 {
+body .productos .productos-grid .parent .div6 {
   grid-area: 3/5/5/7;
+}
+
+body.dark header {
+  background: url("images/back-noche2.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+body.dark header h1 {
+  background: -webkit-linear-gradient(90deg, rgba(2, 58, 41, 0.068) 30%, rgb(255, 255, 255) 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 10px;
+}
+body.dark header .links a {
+  color: rgb(255, 255, 255);
 }
 
 .card-hover {
@@ -192,6 +269,7 @@ body .productos .productos-grid .parent .prod .div6 {
 }
 .card-hover__link:hover svg {
   transform: translateX(4px);
+  z-index: 1;
 }
 .card-hover__link svg {
   width: 18px;
